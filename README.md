@@ -15,3 +15,9 @@
 
 Генерация данных:
 `pgbench -i -s 6000 postgres`
+
+Тестируем на дефолтных настройках Postgres:
+`pgbench -c 5 -j 8 -T 1800 postgres`
+ - Загрузка CPU: 30 - 35%
+ - latency average = 2.391 ms
+ - tps = 2091.285125
