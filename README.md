@@ -16,7 +16,7 @@
 Генерация данных:
 `pgbench -i -s 6000 postgres`
 
-Тестируем на дефолтных настройках Postgres: 
+Тестируем на дефолтных настройках Postgres:  
 `pgbench -c 5 -j 8 -T 1800 postgres`
 
 
