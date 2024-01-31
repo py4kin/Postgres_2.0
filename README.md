@@ -13,4 +13,6 @@
 Генерация данных
 `pgbench -i -s 6000 postgres`
 
-\```pgbench -i -s 6000 postgres\```
+\```
+pgbench -i -s 6000 postgres
+\```
