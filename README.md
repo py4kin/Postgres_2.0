@@ -43,6 +43,11 @@ mode extended: `pgbench -M extended -c N -j 8 -T 1800`, где с - кол-во 
  - work_mem
  - maintenance_work_mem
  - huge_pages
- - и друние
+ - и другие
 
 ### Тестируем на измененных настройках Postgres.
+
+
+</a>
+
+[Оглавление](#contents)
