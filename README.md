@@ -108,7 +108,7 @@ mode extended: `pgbench -M extended -c 200 -j 8 -T 1800 postgres`
 | latency average    | 33.287 ms |
 | tps    | 5978 |
 
-### Отключаем синхронную запись на диск:  
+### Выключаем синхронную запись на диск:  
 `fsync=off`  
 mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
 
