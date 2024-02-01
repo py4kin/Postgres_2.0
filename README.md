@@ -130,7 +130,15 @@ mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
 | latency average    | 26.773 ms |
 | tps    | 7432 |
 
+## Вывод:
+ - Не заметил разницы между simple и extended modes. Где-то хуже, где-то лучше.
+ - При увеличение числа клиентов растет утилизация CPU. Если кол-во клентов равно числу max_connections начинается утилизация оперативки.
+ - Отключение свойства надежности (D) помогает выиграть в кол-ве tps, но это черевато если сервер завершит работу аварийно.
 
+### Дополнительные исследования:  
+При выставление параметра `shared_buffers=0` Postgres не запускатеся.
+При выставление параметра `shared_buffers` в минимальное значение, например `shared_buffers=1` при нагрузке Postgres выдает ошибку:  
+`pgbench: error: client 64 script 0 aborted in command 8 query 0: ERROR:  no unpinned buffers available`
 </a>
 
 [Оглавление](#contents)
