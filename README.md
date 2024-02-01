@@ -89,7 +89,7 @@ mode extended: `pgbench -M extended -c 200 -j 8 -T 1800 postgres`
 #### При увеличение кол-во max_connections=200 и при тестах с кол-во клиентом=200 утилизация процессора в 100% не ушла, зато начала расти оперативка. Кол-во tps соответственно подросло.
 
 ### Отключим синхронный коммит:  
-`synchronous_commit = off`
+`synchronous_commit = off`  
 mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
 
 | Метрики / Тест | 200 клиентов |
