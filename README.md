@@ -98,6 +98,37 @@ mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
 | ОЗУ    | 4.88 |
 | latency average    | 30.196 ms |
 | tps    | 6590 |
+
+mode extended: `pgbench -M extended -c 200 -j 8 -T 1800 postgres`
+
+| Метрики / Тест | 200 клиентов |
+| ----------- | ----------- |
+| CPU    | 94-98% |
+| ОЗУ    | 4.93 |
+| latency average    | 33.287 ms |
+| tps    | 5978 |
+
+### Отключаем синхронную запись на диск:  
+`fsync=off`  
+mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
+
+| Метрики / Тест | 200 клиентов |
+| ----------- | ----------- |
+| CPU    | 90-95% |
+| ОЗУ    | 4.94 |
+| latency average    | 288.387 ms |
+| tps    | 6313 |
+
+### Вообще отключаем синхронную запись на диск:
+`full_page_writes=off`  
+mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
+
+| Метрики / Тест | 200 клиентов |
+| ----------- | ----------- |
+| CPU    | 92-97% |
+| ОЗУ    | 4.81 |
+| latency average    | 26.773 ms |
+| tps    | 7432 |
 </a>
 
 [Оглавление](#contents)
