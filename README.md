@@ -129,6 +129,8 @@ mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
 | ОЗУ    | 4.81 |
 | latency average    | 26.773 ms |
 | tps    | 7432 |
+
+
 </a>
 
 [Оглавление](#contents)
