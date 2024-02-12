@@ -191,6 +191,31 @@ server closed the connection unexpectedly
         before or while processing the request.
 ```
 Увеличил в `pgbouncer`: `query_wait_timeout = 600` и `max_client_conn = 1000`
+
+`pgbench -c 777 -j 1 -T 600 -U postgres -p 6432 -h 127.0.0.1 postgres`
+
+| Метрики / Тест | Тест |
+| ----------- | ----------- |
+| CPU    | 78% |
+| latency average  | 352.991 ms |
+| tps    | 2201 |
+
+`pgbench -c 777 -j 1 -T 600 -f ~/workload.sql -U postgres -p 6432 -h 127.0.0.1 thai`
+
+| Метрики / Тест | Тест |
+| ----------- | ----------- |
+| CPU    | 75% |
+| latency average  | 45.086 ms |
+| tps    | 17233 |
+
+График CPU 2-ух прогонов через pgbouncer:
+![Схема](/homework_№2/pgbounser_default_cpu.png)
+
+График транзакций 2-ух прогонов через pgbouncer:
+
+График connections 2-ух прогонов через pgbouncer:
+
+График idle 2-ух прогонов через pgbouncer:
 </a>
 
 [Оглавление](#contents)
