@@ -169,6 +169,9 @@ pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - чис
 
 График CPU 4 прогонов соответсвенно:
 ![Схема](/homework_№2/ванильный_пг_cpu.png)
+
+График тна 4 прогонов соответсвенно:
+![Схема](/homework_№2/ванильный_пг_cpu.png)
 </a>
 
 [Оглавление](#contents)
