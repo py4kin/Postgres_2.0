@@ -173,7 +173,11 @@ pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - чис
 
 
 
+График connections 4 прогонов соответсвенно:
+![Схема](/homework_№2/ванильный_пг_connections.png)  
 
+График idle sessions 4 прогонов соответсвенно:
+![Схема](/homework_№2/ванильный_пг_idle_sessions.png)  
 </a>
 
 [Оглавление](#contents)
