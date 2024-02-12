@@ -216,6 +216,8 @@ server closed the connection unexpectedly
 
 График idle 2-ух прогонов через pgbouncer:
 ![Схема](/homework_№2/pgbounser_default_idle_sessions.png)
+
+#### Число tps упало, назрузка на CPU упала. Обратим внимание на последний график idle_sessions. Верхняя граница графика "работает" ровно на отметки в 20 штук. В pgbouncer есть параметр default_pool_size, который равен по умолчанию 20.
 </a>
 
 [Оглавление](#contents)
