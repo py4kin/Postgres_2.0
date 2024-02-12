@@ -139,7 +139,6 @@ mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
 При выставление параметра `shared_buffers=0` Postgres не запускатеся.
 При выставление параметра `shared_buffers` в минимальное значение, например `shared_buffers=1` при нагрузке Postgres выдает ошибку:  
 `pgbench: error: client 64 script 0 aborted in command 8 query 0: ERROR:  no unpinned buffers available`
-</a>
 
 [Оглавление](#contents)
 
@@ -158,5 +157,7 @@ pgbench -c 777 -j N -T 600 postgres, где j - число потоков.
 | ОЗУ    | 13.5 | 13,5 |
 | latency average  | 219.657 ms | 230.689 ms |
 | tps    | 3537 | 3368 |
+
 </a>
+
 [Оглавление](#contents)
