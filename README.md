@@ -149,7 +149,7 @@ mode simple: `pgbench -c 200 -j 8 -T 1800 postgres`
 Настройки ПГ из первого задания, взатые с кибертека,за исключением: max_connections = 1000  
 
 ### Тестируем Ванильный ПГ:
-pgbench -c 777 -j N -T 600 postgres, где j - число потоков.
+`pgbench -c 777 -j N -T 600 postgres`, где j - число потоков.
 
 | Метрики / Тест | j=1 | j=8 |
 | ----------- | ----------- | ----------- |
@@ -159,7 +159,7 @@ pgbench -c 777 -j N -T 600 postgres, где j - число потоков.
 | tps    | 3537 | 3368 |
 
 #### Закачали БД thai на 60 ГБ.
-pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - число потоков.
+`pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai`, где j - число потоков.
 | Метрики / Тест | j=1 | j=8 |
 | ----------- | ----------- | ----------- |
 | CPU    | 95-98% | 100% |
@@ -182,7 +182,15 @@ pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - чис
 
 #### Устанавливаем pgbouncer.
 
-pgbench -c 777 -j 1 -T 600 -U postgres -p 6432 -h 127.0.0.1 postgres
+`pgbench -c 777 -j 1 -T 600 -U postgres -p 6432 -h 127.0.0.1 postgres`.  
+Через две минуты, за это время прошло 19 коннекторов, pgbench начал выдавать ошибки.
+```
+pgbench: error: client 20 script 0 aborted in command 4 query 0: FATAL:  query_wait_timeout
+server closed the connection unexpectedly
+        This probably means the server terminated abnormally
+        before or while processing the request.
+```
+Увеличил в `pgbouncer`: `query_wait_timeout = 600` и `max_client_conn = 1000`
 </a>
 
 [Оглавление](#contents)
