@@ -177,6 +177,12 @@ pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - чис
 
 График idle sessions 4 прогонов соответсвенно:
 ![Схема](/homework_№2/ванильный_пг_idle_sessions.png)  
+
+### Увеличение числа потоков у pgbench не дает никакого разультата.
+
+#### Устанавливаем pgbouncer.
+
+pgbench -c 777 -j 1 -T 600 -U postgres -p 6432 -h 127.0.0.1 postgres
 </a>
 
 [Оглавление](#contents)
