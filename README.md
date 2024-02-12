@@ -218,9 +218,23 @@ server closed the connection unexpectedly
 ![Схема](/homework_№2/pgbounser_default_idle_sessions.png)
 
 #### Число tps упало, назрузка на CPU упала. Обратим внимание на последний график idle_sessions. Верхняя граница графика "работает" ровно на отметки в 20 штук. В pgbouncer есть параметр default_pool_size, который равен по умолчанию 20.
-Увеличил в `pgbouncer`: `default_pool_size=300`
+Увеличил в `pgbouncer`: `default_pool_size=300`  
 'pgbench -c 777 -j 1 -T 600 -f ~/workload.sql -U postgres -p 6432 -h 127.0.0.1 thai'
 
+| Метрики / Тест | Тест |
+| ----------- | ----------- |
+| CPU    | 95% |
+| latency average  | 35.904 ms |
+| tps    | 21641 |
+
+График CPU прогоина через `pgbouncer default_pool_size=300`:
+![Схема](/homework_№2/pgbounser_tun_cpu.png)
+График Connections прогоина через `pgbouncer default_pool_size=300`:
+![Схема](/homework_№2/pgbounser_tun_connections.png)
+График transactions прогоина через `pgbouncer default_pool_size=300`:
+![Схема](/homework_№2/pgbounser_tun_transactions.png)
+График edli sessions прогоина через `pgbouncer default_pool_size=300`:
+![Схема](/homework_№2/pgbounser_tun_idle_sessions.png)
 </a>
 
 [Оглавление](#contents)
