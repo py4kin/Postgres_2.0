@@ -212,10 +212,10 @@ server closed the connection unexpectedly
 ![Схема](/homework_№2/pgbounser_default_cpu.png)
 
 График транзакций 2-ух прогонов через pgbouncer:
-
-График connections 2-ух прогонов через pgbouncer:
+![Схема](/homework_№2/pgbounser_default_transactions.png)
 
 График idle 2-ух прогонов через pgbouncer:
+![Схема](/homework_№2/pgbounser_default_idle_sessions.png)
 </a>
 
 [Оглавление](#contents)
