@@ -1,4 +1,4 @@
-# Postgres_2.0
+![image](https://github.com/py4kin/Postgres_2.0/assets/12057777/46a51369-c1d4-4465-ba02-84cbfc9b599a)# Postgres_2.0
 <a id="contents"></a>
 [Домашнее задание №1 (Первичная настройка ОС и PostgreSQL БД)](#1)
 
@@ -169,9 +169,8 @@ pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - чис
 
 График CPU 4 прогонов соответсвенно:
 ![Схема](/homework_№2/ванильный_пг_cpu.png)
-
 График тна 4 прогонов соответсвенно:
-![Схема](/homework_№2/ванильный_пг_cpu.png)
+![Схема](/homework_№2/ванильный_пг_transactions.png)
 </a>
 
 [Оглавление](#contents)
