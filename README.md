@@ -158,7 +158,7 @@ pgbench -c 777 -j N -T 600 postgres, где j - число потоков.
 | latency average  | 219.657 ms | 230.689 ms |
 | tps    | 3537 | 3368 |
 
-### Закачали БД thai на 60 ГБ.
+#### Закачали БД thai на 60 ГБ.
 pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - число потоков.
 | Метрики / Тест | j=1 | j=8 |
 | ----------- | ----------- | ----------- |
@@ -166,6 +166,8 @@ pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - чис
 | ОЗУ    | 7.5 | 7,5 |
 | latency average  | 22.030 ms | 22.928 ms |
 | tps    | 35270 | 33888 |
+
+![Схема](/homework_№2/ванильный_пг_cpu.png)
 </a>
 
 [Оглавление](#contents)
