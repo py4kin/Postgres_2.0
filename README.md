@@ -167,6 +167,7 @@ pgbench -c 777 -j N -T 600 -f ~/workload.sql -U postgres thai, где j - чис
 | latency average  | 22.030 ms | 22.928 ms |
 | tps    | 35270 | 33888 |
 
+График CPU 4 прогонов соответсвенно:
 ![Схема](/homework_№2/ванильный_пг_cpu.png)
 </a>
 
