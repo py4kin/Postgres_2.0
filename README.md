@@ -237,4 +237,6 @@ server closed the connection unexpectedly
 ![Схема](/homework_№2/pgbounser_tun_idle_sessions.png)
 </a>
 
+#### При использование pgbouncer дает плюсы
+
 [Оглавление](#contents)
