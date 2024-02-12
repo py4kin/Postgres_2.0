@@ -158,4 +158,5 @@ pgbench -c 777 -j N -T 600 postgres, где j - число потоков.
 | ОЗУ    | 13.5 | 13,5 |
 | latency average  | 219.657 ms | 230.689 ms |
 | tps    | 3537 | 3368 |
+</a>
 [Оглавление](#contents)
