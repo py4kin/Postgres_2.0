@@ -1,4 +1,4 @@
-![image](https://github.com/py4kin/Postgres_2.0/assets/12057777/46a51369-c1d4-4465-ba02-84cbfc9b599a)# Postgres_2.0
+# Postgres_2.0
 <a id="contents"></a>
 [Домашнее задание №1 (Первичная настройка ОС и PostgreSQL БД)](#1)
 
